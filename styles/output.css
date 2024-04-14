@@ -818,6 +818,10 @@ video {
   display: none;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -828,10 +832,6 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .flex-shrink {
