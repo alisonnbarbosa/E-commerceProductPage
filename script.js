@@ -1,3 +1,4 @@
+/*troca da imagem principal do produto*/
 const imgm = document.getElementById('imgm')
 const btprevious = document.getElementById('btprevious')
 const btnext = document.getElementById('btnext')
@@ -21,3 +22,9 @@ function button(c){
 function img(num){
     imgm.src = `img/image-product-${num}.jpg`
 }
+
+/*navbar responsivo*/
+const navbar = document.getElementById('navbar')
+
+document.getElementById('menu').addEventListener('click', ()=> navbar.style.transform = 'translateX(0)')
+document.getElementById('close').addEventListener('click', ()=> navbar.style.transform = 'translateX(-100%)')

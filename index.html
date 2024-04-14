@@ -13,12 +13,15 @@
     <div class="max-w-screen-xl mx-4">
         <header class="flex justify-between items-center py-8">
             <div class="flex gap-4 items-center">
-                <button class="">
-                    <img src="img/icon-menu.svg" alt="menu" class="">
+                <button class="" id="menu">
+                    <img src="img/icon-menu.svg" alt="menu">
                 </button>
                 <img src="img/logo.svg" alt="logo" class="">
-                <nav class="">
-                    <ul class="max-lg:hidden">
+                <nav class="fixed top-0 left-0 w-1/2 h-full bg-white z-40 translate-x-100 duration-200" id="navbar">
+                    <button class="absolute top-8 left-4 w-6" id="close">
+                        <img src="img/icon-close.svg" alt="close" class="w-full">
+                    </button>
+                    <ul class="font-bold pt-28 pl-4 flex flex-col gap-4">
                         <li><a href="#">Collections</a></li>
                         <li><a href="#">Men</a></li>
                         <li><a href="#">Women</a></li>
