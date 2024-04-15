@@ -8,3 +8,10 @@
 .translate-x-100{
     transform: translateX(-100%);
 }
+.translate-x-50{
+    transform: translateX(-50%);
+}
+.indicador{
+    top: -0.5rem;
+    right: -0.5rem;
+}
