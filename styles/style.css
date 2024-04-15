@@ -15,3 +15,10 @@
     top: -0.5rem;
     right: -0.5rem;
 }
+#cartcontainer{
+    top: 4rem;
+    z-index: 1;
+}
+#navbar{
+    z-index: 2;
+}
