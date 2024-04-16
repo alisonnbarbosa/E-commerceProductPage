@@ -40,17 +40,22 @@ function numproduto(num){
         c = 0
         return
     }
-
     outnum.textContent = c
 }
 
 /*indicar a quantidade de produtos no cart*/
 const indicador = document.getElementById('indicador')
-document.getElementById('addcart').addEventListener('click', ()=> indicar())
+document.getElementById('addcart').addEventListener('click', ()=> {
+    indicar()
+    c=0
+    numproduto(0)
+})
 
 function indicar(){
     if(c > 0){
         indicador.textContent = c
+    } else{
+        indicador.textContent = ''
     }
 }
 
@@ -73,7 +78,7 @@ function exibircart(){
 
 /*cria o cart*/
 function criarcart(){
-    if(c > 0){
+    if(indicador.textContent > 0){
         cartcontainer.innerHTML = `<h1 class="font-bold">Cart</h1>
         <hr>
         <div class="flex items-center justify-between">
@@ -90,20 +95,21 @@ function criarcart(){
             <img src="img/icon-delete.svg" alt="delete">
         </button>
     </div>
-    <button class="font-bold text-white bg-orange-600 py-2 rounded-xl">
+    <button class="font-bold text-white bg-orange-600 py-2 rounded-xl hover:bg-orange-400 duration-150">
         Checkout
     </button>`
 
     document.getElementById('btdelete').addEventListener('click', ()=> removercart())
 
-    document.getElementById('x').textContent = `${c}`
-    document.getElementById('total').textContent = `$${c * 125}.00`
+    document.getElementById('x').textContent = `${indicador.textContent}`
+    document.getElementById('total').textContent = `$${indicador.textContent * 125}.00`
     } else{
         removercart()
     }
 }
 
 function removercart(){
+    indicar()
     cartcontainer.innerHTML = `<h1 class="font-bold">Cart</h1>
         <hr>
         <div class="flex items-center justify-center h-full">
