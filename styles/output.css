@@ -963,6 +963,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -2057,6 +2061,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -2476,6 +2490,10 @@ video {
   outline-width: 2px;
 }
 
+.outline-4 {
+  outline-width: 4px;
+}
+
 .outline-orange-600 {
   outline-color: #ea580c;
 }
@@ -2756,6 +2774,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }

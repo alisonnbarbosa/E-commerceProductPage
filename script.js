@@ -1,3 +1,14 @@
+/*troca img principal via imgs*/
+const imgm1 = document.getElementById('imgm1')
+const imgm2 = document.getElementById('imgm2')
+const imgm3 = document.getElementById('imgm3')
+const imgm4 = document.getElementById('imgm4')
+
+imgm1.addEventListener('click', ()=>img(1))
+imgm2.addEventListener('click', ()=>img(2))
+imgm3.addEventListener('click', ()=>img(3))
+imgm4.addEventListener('click', ()=>img(4))
+
 /*troca a imagem principal do produto*/
 const imgm = document.getElementById('imgm')
 document.getElementById('btprevious').addEventListener('click', ()=> button(-1))
