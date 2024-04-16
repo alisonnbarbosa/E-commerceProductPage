@@ -12,16 +12,16 @@
 <body class="flex justify-center items-center">
     <div class="max-w-screen-xl mx-4">
         <header class="flex justify-between items-center py-8">
-            <div class="flex gap-4 items-center">
-                <button class="" id="menu">
+            <div class="flex md:justify-between items-center gap-12">
+                <button class="md:hidden" id="menu">
                     <img src="img/icon-menu.svg" alt="menu">
                 </button>
-                <img src="img/logo.svg" alt="logo" class="">
-                <nav class="fixed top-0 left-0 w-1/2 h-full bg-white translate-x-100 duration-200" id="navbar">
-                    <button class="absolute top-8 left-4 w-6" id="close">
+                <img src="img/logo.svg" alt="logo">
+                <nav class="max-md:fixed top-0 left-0 max-md:w-1/2 max-md:h-full max-md:bg-white max-md:translate-x-100 duration-200" id="navbar">
+                    <button class="absolute top-8 left-4 w-6 md:hidden" id="close">
                         <img src="img/icon-close.svg" alt="close" class="w-full">
                     </button>
-                    <ul class="font-bold pt-28 pl-4 flex flex-col gap-4">
+                    <ul class="md:text-stone-500 max-md:font-bold max-md:pt-28 max-md:pl-4 flex max-md:flex-col gap-4">
                         <li><a href="#">Collections</a></li>
                         <li><a href="#">Men</a></li>
                         <li><a href="#">Women</a></li>
@@ -36,14 +36,14 @@
                         <span class="absolute indicador bg-orange-600 px-2 rounded-full font-sm text-white" id="indicador"></span>
                         <img src="img/icon-cart.svg" alt="cart" class="w-6">
                     </button>
-                    <div class="absolute w-80 h-40 bg-white flex flex-col gap-2 p-2 rounded-lg left-2/4 translate-x-50 hidden" id="cartcontainer"></div>
+                    <div class="absolute w-80 h-40 bg-white flex flex-col gap-2 p-2 rounded-lg left-2/4 translate-x-50 hidden shadow-lg" id="cartcontainer"></div>
                 </div>
                 <button class="w-8">
                     <img src="img/image-avatar.png" alt="avatar" class="hover:outline outline-2 outline-orange-600 rounded-full">
                 </button>
             </div>
         </header>
-        <main class="flex flex-col justify-center items-center">
+        <main class="flex max-lg:flex-col justify-center items-center pt-12 pb-20 lg:gap-12">
             <section class="flex flex-col gap-4">
                 <div class="w-full relative">
                     <div class="w-full absolute top-2/4 flex justify-between px-8">
@@ -54,21 +54,21 @@
                             <img src="img/icon-next.svg" alt="next">
                         </button>
                     </div>
-                    <img src="img/image-product-1.jpg" alt="img" id="imgm">
+                    <img src="img/image-product-1.jpg" alt="img" id="imgm" class="lg:rounded-lg">
                 </div>
                 <div class="max-lg:hidden">
-                    <ul class="">
+                    <ul class="flex gap-4">
                         <li>
-                            <img src="img/image-product-1-thumbnail.jpg" alt="" class="" id="">
+                            <img src="img/image-product-1-thumbnail.jpg" alt="" class="rounded-lg max-w-32" id="">
                         </li>
                         <li>
-                            <img src="img/image-product-2-thumbnail.jpg" alt="" class="" id="">
+                            <img src="img/image-product-2-thumbnail.jpg" alt="" class="rounded-lg max-w-32" id="">
                         </li>
                         <li>
-                            <img src="img/image-product-3-thumbnail.jpg" alt="" class="" id="">
+                            <img src="img/image-product-3-thumbnail.jpg" alt="" class="rounded-lg max-w-32" id="">
                         </li>
                         <li>
-                            <img src="img/image-product-4-thumbnail.jpg" alt="" class="" id="">
+                            <img src="img/image-product-4-thumbnail.jpg" alt="" class="rounded-lg max-w-32" id="">
                         </li>
                     </ul>
                 </div>
@@ -87,7 +87,7 @@
                     </p>
                     <span class="text-xl font-bold line-through text-gray-400">$250.00</span>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-4">
+                <div class="flex max-md:flex-col items-center justify-center gap-4">
                     <button class="flex justify-between items-center bg-slate-200 w-80 py-4 px-2 rounded-xl">
                         <img src="img/icon-minus.svg" alt="minus" class="p-2 pl-4" id="btminus">
                         <span class="font-bold text-lg" id="outnum">0</span>
