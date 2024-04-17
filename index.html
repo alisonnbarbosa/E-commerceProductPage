@@ -54,21 +54,21 @@
                             <img src="img/icon-next.svg" alt="next">
                         </button>
                     </div>
-                    <img src="img/image-product-1.jpg" alt="img" id="imgm" class="lg:rounded-lg">
+                    <img src="img/image-product-1.jpg" alt="img" id="imgm" class="lg:rounded-xl md:cursor-pointer">
                 </div>
                 <div class="max-lg:hidden">
                     <ul class="flex gap-4">
                         <li>
-                            <img src="img/image-product-1-thumbnail.jpg" alt="img" class="rounded-lg max-w-32 cursor-pointer" id="imgm1">
+                            <img src="img/image-product-1-thumbnail.jpg" alt="img" class="rounded-xl max-w-32 cursor-pointer" id="imgm1">
                         </li>
                         <li>
-                            <img src="img/image-product-2-thumbnail.jpg" alt="img" class="rounded-lg max-w-32 cursor-pointer" id="imgm2">
+                            <img src="img/image-product-2-thumbnail.jpg" alt="img" class="rounded-xl max-w-32 cursor-pointer" id="imgm2">
                         </li>
                         <li>
-                            <img src="img/image-product-3-thumbnail.jpg" alt="img" class="rounded-lg max-w-32 cursor-pointer" id="imgm3">
+                            <img src="img/image-product-3-thumbnail.jpg" alt="img" class="rounded-xl max-w-32 cursor-pointer" id="imgm3">
                         </li>
                         <li>
-                            <img src="img/image-product-4-thumbnail.jpg" alt="img" class="rounded-lg max-w-32 cursor-pointer" id="imgm4">
+                            <img src="img/image-product-4-thumbnail.jpg" alt="img" class="rounded-xl max-w-32 cursor-pointer" id="imgm4">
                         </li>
                     </ul>
                 </div>
@@ -98,9 +98,12 @@
             </section>
         </main>
     </div>
-    <div class="hidden">
-        <section class="flex flex-col gap-4">
-            <div class="w-full relative">
+    <div class="z-40 fixed top-0  bg-black bg-opacity-75 flex justify-center items-center w-screen h-screen hidden" id="lightbox">
+        <section class="max-w-lg flex flex-col gap-4">
+            <div class="relative w-full h-4">
+                <button class="absolute right-0" id="btclosel"><img src="img/icon-close.svg" alt="close" class="w-6"></button>
+            </div>
+            <div class="relative">
                 <div class="w-full absolute top-2/4 flex justify-between px-8">
                     <button class="bg-white p-4 rounded-full">
                         <img src="img/icon-previous.svg" alt="previous" id="lprevious">
@@ -109,21 +112,21 @@
                         <img src="img/icon-next.svg" alt="next" id="lnext">
                     </button>
                 </div>
-                <img src="img/image-product-1.jpg" alt="img" class="">
+                <img src="img/image-product-1.jpg" alt="img" class="rounded-xl w-full" id="imgl">
             </div>
-            <div class="max-lg:hidden">
-                <ul class="">
+            <div class="">
+                <ul class="flex justify-around">
                     <li>
-                        <img src="img/image-product-1-thumbnail.jpg" alt="" class="" id="">
+                        <img src="img/image-product-1-thumbnail.jpg" alt="img" class="rounded-xl max-w-24 cursor-pointer" id="imgl1">
                     </li>
                     <li>
-                        <img src="img/image-product-2-thumbnail.jpg" alt="" class="" id="">
+                        <img src="img/image-product-2-thumbnail.jpg" alt="img" class="rounded-xl max-w-24 cursor-pointer" id="imgl2">
                     </li>
                     <li>
-                        <img src="img/image-product-3-thumbnail.jpg" alt="" class="" id="">
+                        <img src="img/image-product-3-thumbnail.jpg" alt="img" class="rounded-xl max-w-24 cursor-pointer" id="imgl3">
                     </li>
                     <li>
-                        <img src="img/image-product-4-thumbnail.jpg" alt="" class="" id="">
+                        <img src="img/image-product-4-thumbnail.jpg" alt="img" class="rounded-xl max-w-24 cursor-pointer" id="imgl4">
                     </li>
                 </ul>
             </div>

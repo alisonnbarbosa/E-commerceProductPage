@@ -30,6 +30,15 @@ function button(c){
 function img(num){
     imgm.src = `img/image-product-${num}.jpg`
 }
+/*exibi lightbox*/
+const lightbox = document.getElementById('lightbox')
+
+imgm.addEventListener('click', ()=> {
+    if(window.innerWidth > 768){
+        lightbox.style.display = 'flex'
+    }
+})
+document.getElementById('btclosel').addEventListener('click', ()=> lightbox.style.display = 'none')
 
 /*navbar responsivo*/
 const navbar = document.getElementById('navbar')
