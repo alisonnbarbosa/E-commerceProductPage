@@ -3,16 +3,27 @@ const imgm1 = document.getElementById('imgm1')
 const imgm2 = document.getElementById('imgm2')
 const imgm3 = document.getElementById('imgm3')
 const imgm4 = document.getElementById('imgm4')
+const imgl1 = document.getElementById('imgl1')
+const imgl2 = document.getElementById('imgl2')
+const imgl3 = document.getElementById('imgl3')
+const imgl4 = document.getElementById('imgl4')
 
 imgm1.addEventListener('click', ()=>img(1))
 imgm2.addEventListener('click', ()=>img(2))
 imgm3.addEventListener('click', ()=>img(3))
 imgm4.addEventListener('click', ()=>img(4))
+imgl1.addEventListener('click', ()=>img(1))
+imgl2.addEventListener('click', ()=>img(2))
+imgl3.addEventListener('click', ()=>img(3))
+imgl4.addEventListener('click', ()=>img(4))
 
 /*troca a imagem principal do produto*/
 const imgm = document.getElementById('imgm')
+const imgl = document.getElementById('imgl')
 document.getElementById('btprevious').addEventListener('click', ()=> button(-1))
 document.getElementById('btnext').addEventListener('click', ()=> button(1))
+document.getElementById('btpreviousl').addEventListener('click', ()=> button(-1))
+document.getElementById('btnextl').addEventListener('click', ()=> button(1))
 
 let num = 1
 
@@ -29,6 +40,7 @@ function button(c){
 
 function img(num){
     imgm.src = `img/image-product-${num}.jpg`
+    imgl.src = `img/image-product-${num}.jpg`
 }
 /*exibi lightbox*/
 const lightbox = document.getElementById('lightbox')
