@@ -1,4 +1,3 @@
-/*troca img principal via imgs*/
 const imgm1 = document.getElementById('imgm1')
 const imgm2 = document.getElementById('imgm2')
 const imgm3 = document.getElementById('imgm3')
@@ -7,6 +6,14 @@ const imgl1 = document.getElementById('imgl1')
 const imgl2 = document.getElementById('imgl2')
 const imgl3 = document.getElementById('imgl3')
 const imgl4 = document.getElementById('imgl4')
+const m1 = document.getElementById('m1')
+const m2 = document.getElementById('m2')
+const m3 = document.getElementById('m3')
+const m4 = document.getElementById('m4')
+const l1 = document.getElementById('l1')
+const l2 = document.getElementById('l2')
+const l3 = document.getElementById('l3')
+const l4 = document.getElementById('l4')
 
 imgm1.addEventListener('click', ()=>img(1))
 imgm2.addEventListener('click', ()=>img(2))
@@ -41,6 +48,7 @@ function button(c){
 function img(num){
     imgm.src = `img/image-product-${num}.jpg`
     imgl.src = `img/image-product-${num}.jpg`
+    numimg(num)
 }
 /*exibi lightbox*/
 const lightbox = document.getElementById('lightbox')
@@ -51,6 +59,30 @@ imgm.addEventListener('click', ()=> {
     }
 })
 document.getElementById('btclosel').addEventListener('click', ()=> lightbox.style.display = 'none')
+
+/*verifica qual img está sendo exibida*/
+function numimg(num){
+    num==1?indicarimg(m1,imgm1,l1,imgl1):removerindicar(m1,imgm1,l1,imgl1)
+    num==2?indicarimg(m2,imgm2,l2,imgl2):removerindicar(m2,imgm2,l2,imgl2)
+    num==3?indicarimg(m3,imgm3,l3,imgl3):removerindicar(m3,imgm3,l3, imgl3)
+    num==4?indicarimg(m4,imgm4,l4,imgl4):removerindicar(m4,imgm4,l4,imgl4)
+}
+numimg(num)
+
+/*indica qual img está sendo exibida*/
+function indicarimg(i1,i2,i3,i4){
+    i1.classList.add('outline','outline-4','outline-orange-600')
+    i2.classList.add('opacity-25')
+    i3.classList.add('outline','outline-4','outline-orange-600')
+    i4.classList.add('opacity-25')
+}
+/*remover indicação da img*/
+function removerindicar(a1,a2,a3,a4){
+    a1.classList.remove('outline','outline-4','outline-orange-600')
+    a2.classList.remove('opacity-25')
+    a3.classList.remove('outline','outline-4','outline-orange-600')
+    a4.classList.remove('opacity-25')
+}
 
 /*navbar responsivo*/
 const navbar = document.getElementById('navbar')

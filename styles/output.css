@@ -2322,6 +2322,10 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-25 {
+  opacity: 0.25;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -2499,6 +2503,10 @@ video {
 
 .outline-2 {
   outline-width: 2px;
+}
+
+.outline-4 {
+  outline-width: 4px;
 }
 
 .outline-orange-600 {
@@ -2711,10 +2719,6 @@ video {
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
-}
-
-.hover\:opacity-75:hover {
-  opacity: 0.75;
 }
 
 .hover\:outline:hover {
