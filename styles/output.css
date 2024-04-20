@@ -683,6 +683,10 @@ video {
   top: 0px;
 }
 
+.top-14 {
+  top: 3.5rem;
+}
+
 .top-2\/4 {
   top: 50%;
 }
@@ -701,6 +705,10 @@ video {
 
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-start {
@@ -859,8 +867,8 @@ video {
   height: 1rem;
 }
 
-.h-40 {
-  height: 10rem;
+.h-48 {
+  height: 12rem;
 }
 
 .h-full {
@@ -2754,6 +2762,14 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:top-16 {
+    top: 4rem;
+  }
+
+  .max-lg\:top-20 {
+    top: 5rem;
+  }
+
   .max-lg\:hidden {
     display: none;
   }

@@ -15,13 +15,6 @@
     top: -0.5rem;
     right: -0.5rem;
 }
-#cartcontainer{
-    top: 3.5rem;
-    z-index: 1;
-}
-#navbar{
-    z-index: 2;
-}
 @media (width > 768px) {
     #navbar ul li:hover{
         color: #000;

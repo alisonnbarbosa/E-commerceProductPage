@@ -143,30 +143,32 @@ function exibircart(){
 /*cria o cart*/
 function criarcart(){
     if(indicador.textContent > 0){
-        cartcontainer.innerHTML = `<h1 class="font-bold">Cart</h1>
+        cartcontainer.innerHTML = `<h1 class="font-bold text-xl">Cart</h1>
         <hr>
-        <div class="flex items-center justify-between">
-        <img src="img/image-product-1-thumbnail.jpg" alt="" class="w-12">
-        <div class="flex flex-col">
-            <p class="">Fall Limited Edition Sneakers</p>
-            <p class="">
-                $125.00 x
-                <span class="" id="x"></span>
-                <span class="font-bold" id="total"></span>
-            </p>
-        </div>
-        <button id="btdelete" class="p-2">
-            <img src="img/icon-delete.svg" alt="delete">
-        </button>
-    </div>
-    <button class="font-bold text-white bg-orange-600 py-2 rounded-xl hover:bg-orange-400 duration-150">
-        Checkout
-    </button>`
+        <div class="flex flex-col justify-around h-full">
+            <div class="flex items-center justify-between">
+                <img src="img/image-product-1-thumbnail.jpg" alt="img" class="w-12 rounded">
+                <div class="flex flex-col">
+                    <p>Fall Limited Edition Sneakers</p>
+                    <p>
+                        $125.00 x
+                        <span id="x"></span>
+                        <span class="font-bold" id="total"></span>
+                    </p>
+                </div>
+                <button id="btdelete">
+                    <img src="img/icon-delete.svg" alt="delete">
+                </button>
+            </div>
+            <button class="font-bold text-white bg-orange-600 py-2 rounded-xl hover:bg-orange-400 duration-150">
+                Checkout
+            </button>
+        </div>`
 
-    document.getElementById('btdelete').addEventListener('click', ()=> removercart())
+        document.getElementById('btdelete').addEventListener('click', ()=> removercart())
 
-    document.getElementById('x').textContent = `${indicador.textContent}`
-    document.getElementById('total').textContent = `$${indicador.textContent * 125}.00`
+        document.getElementById('x').textContent = `${indicador.textContent}`
+        document.getElementById('total').textContent = `$${indicador.textContent * 125}.00`
     } else{
         removercart()
     }
@@ -174,7 +176,7 @@ function criarcart(){
 
 function removercart(){
     indicar()
-    cartcontainer.innerHTML = `<h1 class="font-bold">Cart</h1>
+    cartcontainer.innerHTML = `<h1 class="font-bold text-xl">Cart</h1>
         <hr>
         <div class="flex items-center justify-center h-full">
         <p class="text-stone-500">Your cart is empty.</p>
